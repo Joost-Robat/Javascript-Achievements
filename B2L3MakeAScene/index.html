@@ -1,0 +1,18 @@
+<!doctype HTML>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="grass" src="grass.jpg"/>
+      </a-assets>
+      <a-box color="#ff0000" position="10 0 2"></a-box>
+      <a-sky color="#42d7f5"></a-sky>
+      <a-sphere color="#f200ff" position="10 0 0" rotation="0 0 0" scale="2 2 1">
+      <a-box color="#001eff" position="0 0 4" scale="1 3 2"></a-box>
+      <a-plane position="0 -2 0" rotation="-90 0 0" width="100" height="100" src="#grass"></a-plane>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <canvas style="border: 25px solid cyan" id="mycanvas" height ="875" width = "1600">
+</body>
+<script src="turtle.js"></script>
+<script>
+  var p = new Turtle(document.getElementById("mycanvas"));
+  p.moveto(1100, 420);
+  p.penDown = true;
+
+function Square(size){
+  for(var i = 0; i < 20; i++){
+    p.forward(size);
+    p.right(28);
+  }
+}
+
+for(var i = 0; i < 20; i++){
+  Square(150);
+  p.forward(4);
+  p.left(28);
+}
+
+
+</script>
+</html>

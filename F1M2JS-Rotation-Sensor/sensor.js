@@ -37,7 +37,7 @@ function showDataColor(alpha, beta, gamma){
 function activateVoice(alpha, beta, gamma){
     // voice if Z-axis rotation > value
     if(alpha > 120){
-        let myTxt = "don't touch me mister. I am the big dangerous.";
+        let myTxt = "blijf van me af. ik kan jou door het scherm meppen.";
         sayItLoud(myTxt); // text 2 speech
 
         // laat het ook in de HTML zien
@@ -52,9 +52,9 @@ function activateVoice(alpha, beta, gamma){
 function showMyImage(alpha, beta, gamma){
     // image if X-axis > value
     if(beta > 40){
-        message = "It's a friendly gecko! He wishes you a good day."
+        let message = "It's a friendly gecko! He wishes you a good day."
         document.getElementById('myImage').src = "image.jpg"; // show image
-        document.getElementById('msg').src = message
+        document.getElementById('msg').innerHTML = message
         }
         else {
             document.getElementById('myImage').src = ""; // no image

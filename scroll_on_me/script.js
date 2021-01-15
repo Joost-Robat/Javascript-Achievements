@@ -11,6 +11,7 @@ function setup(){
   })
   button.addEventListener('click', function(){
     document.getElementById('text').innerHTML = resetText
+    aantal = 0
   })
 }
 window.addEventListener("DOMContentLoaded", setup);
